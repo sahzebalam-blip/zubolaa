@@ -1,0 +1,117 @@
+@media (max-width: 1100px) {
+  .hero-grid,
+  .module-grid,
+  .module-grid-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .module-grid-reverse .module-copy,
+  .module-grid-reverse .module-visual {
+    order: initial;
+  }
+
+  .hero-visual-wrap {
+    min-height: 440px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-wrap {
+    position: relative;
+  }
+
+  .nav-links.open {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    display: grid;
+    gap: 12px;
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(150, 182, 255, 0.16);
+    background: rgba(7, 14, 26, 0.92);
+    backdrop-filter: blur(18px);
+  }
+}
+
+@media (max-width: 820px) {
+  :root {
+    --section-gap: 86px;
+    --container: min(100vw - 28px, 1180px);
+  }
+
+  .nav-wrap {
+    min-height: 66px;
+    padding: 0 16px;
+  }
+
+  .nav-actions {
+    gap: 12px;
+  }
+
+  .nav-actions .btn {
+    min-height: 42px;
+    padding: 0 16px;
+  }
+
+  .hero-section {
+    padding-top: 60px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.5rem, 13vw, 4.15rem);
+  }
+
+  .hero-visual-wrap {
+    min-height: 340px;
+  }
+
+  .hero-orb-shell {
+    width: min(360px, 100%);
+  }
+
+  .narrow-block,
+  .pricing-shell,
+  .module-grid,
+  .cta-shell {
+    padding: 28px 22px;
+  }
+
+  .pricing-band {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-login {
+    display: none;
+  }
+
+  .hero-status-strip span {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-actions,
+  .pricing-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn,
+  .pricing-actions .btn {
+    width: 100%;
+  }
+}
